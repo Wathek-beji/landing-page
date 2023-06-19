@@ -141,6 +141,17 @@ body {
   gap: 20px;
 }
 
+/* footer rules */
+
+.footer-section {
+  padding: 30px;
+}
+
+.footer-text {
+  text-align: center;
+}
+
+
 /* Palette */
 .dark-bg {
   background-color: #1F2937;
@@ -167,10 +178,13 @@ body {
 }
 
 /* Styles */
+
 .logo-st{
   font-size: 24px;
   color: #F9FAF8;
 }
+
+.footer-text-st,
 .cta-text-st,
 .placeholder-text-st,
 .hero-secondary-st,
@@ -235,6 +249,7 @@ body {
   font-size: 20px;
   font-weight: 900;
 }
+
 
 
 /* no bullets, no padding, no margin */
