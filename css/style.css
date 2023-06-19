@@ -9,15 +9,11 @@
 
 body {
   margin: 0;
+  padding: 0;
 }
 
-header {
-  border: 2px solid purple;
-  min-width: min-content;
-}
-
+/* Header rules */
 .navigation {
-  border: 1px solid red;
   width: 80%;
   margin: 0 auto;
   padding: 10px;
@@ -25,30 +21,57 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  min-width: min-content;
 }
 
 .logo {
-  border: 1px solid gold;
   margin: 5px 0 5px;
   flex-shrink: 0;
 }
 
 .links {
-  border: 2px solid green;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
 }
 
-li {
-  border: 1px solid cyan;
+/* Hero Rules */
+.hero-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-main {
+  max-width: 350px;
+  margin-bottom: 5px;
+}
+
+.hero-secondary {
+  max-width: 450px;
+}
+
+.button {
+  margin: 15px 0;
+  padding: 5px 30px;
+}
+
+.image-placeholder {
+  flex: 1;
+  align-self: stretch;
+  display: flex;
+
+}
+
+.placeholder-text {
+  margin: auto;
 }
 
 
 /* Palette */
-
 .dark-bg {
   background-color: #1F2937;
 }
@@ -62,16 +85,45 @@ li {
 }
 
 /* font styles */
-
-.logo-text-st{
+.logo-st{
   font-size: 24px;
   color: #F9FAF8;
 }
 
-.hero-secondary-text-st,
-.header-link-text-st {
+.placeholder-text-st,
+.hero-secondary-st,
+.header-link-st {
   font-size: 18px;
   color: #E5E7EB;
+}
+
+.hero-main-st {
+  font-size: 48px;
+  font-weight: 800;
+  color: #F9FAF8;
+}
+
+.cta-bg{
+  background-color: #3882F6;
+}
+
+.button-st {
+  background-color: #3882F6;
+  color: #f0f0f0;
+  font-size: 18px;
+  font-weight: 800;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid transparent;
+
+}
+
+.button-st:hover {
+  background-color: #1a51ab;
+}
+
+.image-placeholder-st {
+  background-color: #6d747e;
 }
 
 /* no bullets, no padding, no margin */
@@ -82,7 +134,13 @@ ul {
 }
 
 /* no decoration */
-
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+/* no margin on headings and paragraphs */
+p,
+h1 {
+  margin: 0;
 }
