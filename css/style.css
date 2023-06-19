@@ -124,6 +124,23 @@ body {
   align-self: flex-end;
 }
 
+/* Call to action rules */
+
+.cta-section {
+  padding: 100px 0;
+}
+
+.cta {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 30px 100px;
+  gap: 20px;
+}
+
 /* Palette */
 .dark-bg {
   background-color: #1F2937;
@@ -154,7 +171,7 @@ body {
   font-size: 24px;
   color: #F9FAF8;
 }
-
+.cta-text-st,
 .placeholder-text-st,
 .hero-secondary-st,
 .header-link-st {
@@ -204,6 +221,21 @@ body {
   font-size: 18px;
   font-weight: 600;
 }
+
+.button-st:nth-child(2) {
+  border: 1px solid #ffff;
+}
+
+.button-st:nth-child(2):hover {
+  background-color: #ffff;
+  color: #3882F6
+}
+
+.cta-urgent-st {
+  font-size: 20px;
+  font-weight: 900;
+}
+
 
 /* no bullets, no padding, no margin */
 ul {
